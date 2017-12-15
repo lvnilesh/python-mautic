@@ -7,8 +7,8 @@ import os
 from flask import Flask, request, redirect, session, url_for, jsonify
 from requests_oauthlib import OAuth2Session
 
-from python_mautic import MauticOauth2Client, Contacts
-from python_mautic.utils import update_token_tempfile
+from mautic import MauticOauth2Client, Contacts
+from mautic.utils import update_token_tempfile
 
 app = Flask(__name__)
 
